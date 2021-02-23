@@ -7,6 +7,7 @@ const SelectFlowPage = () => {
     <ul>
       <li><Link to={locations.v0.base}>Single route implementation</Link></li>
       <li><Link to={locations.v1.base}>Router navigation inside pages</Link></li>
+      <li><Link to={locations.v2.base}>Router navigation on router level</Link></li>
     </ul>
   );
 };

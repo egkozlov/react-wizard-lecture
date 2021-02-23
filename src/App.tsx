@@ -7,6 +7,7 @@ import {
 import SelectFlowPage from './SelectFlowPage';
 import SuccessPage from './SuccessPage';
 import UserOnboardingV1Router from './wizard-v1/UserOnboardingNavigationInPagesRouter';
+import UserOnboardingV2Router from './wizard-v2/UserOnboaringV2Router';
 import UserOnboardingSingleRoute from './wizard-v0/UserOnboardingSingleRoute';
 import locations from './locations';
 
@@ -24,6 +25,10 @@ function App() {
 
         <Route path={locations.v1.base}>
           <UserOnboardingV1Router />
+        </Route>
+
+        <Route path={locations.v2.base}>
+          <UserOnboardingV2Router />
         </Route>
 
         <Route path={locations.success} exact>
