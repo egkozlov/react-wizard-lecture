@@ -11,6 +11,7 @@ import UserOnboardingV2Router from './wizard-v2/UserOnboaringV2Router';
 import UserOnboardingV3Router from './wizard-v3/UserOnboaringV3Router';
 import UserOnboardingSingleRoute from './wizard-v0/UserOnboardingSingleRoute';
 import locations from './locations';
+import UserOnboardingV4Router from './wizard-v4/UserOnboaringV4Router';
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
 
         <Route path={locations.v3.base}>
           <UserOnboardingV3Router />
+        </Route>
+
+        <Route path={locations.v4.base}>
+          <UserOnboardingV4Router />
         </Route>
 
         <Route path={locations.success} exact>
