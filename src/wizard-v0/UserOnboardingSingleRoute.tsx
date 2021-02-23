@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import NamePage from './pages/NamePage';
 import SexPage from './pages/SexPage';
 import MobileNumberPage from './pages/MobileNumberPage';
+import locations from '../locations';
 
 const UserOnboardingSingleRoute = () => {
   const [page, setPage] = useState(0);
@@ -10,7 +11,7 @@ const UserOnboardingSingleRoute = () => {
     firstName: '',
     lastName: '',
     sex: null,
-    mobileNumber: null
+    mobileNumber: '',
   });
   const history = useHistory();
 
@@ -24,7 +25,7 @@ const UserOnboardingSingleRoute = () => {
   };
 
   const onFinishFlow = (resUser) => {
-    history.push('/success', { user: {...user, ...resUser} });
+    history.push(locations.success, { user: {...user, ...resUser} });
   }
 
   switch (page) {

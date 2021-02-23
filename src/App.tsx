@@ -6,7 +6,9 @@ import {
 } from 'react-router-dom';
 import SelectFlowPage from './SelectFlowPage';
 import SuccessPage from './SuccessPage';
-import UserOnboardingSingleRoute from './wizard-single-route/UserOnboardingSingleRoute';
+import UserOnboardingV1Router from './wizard-v1/UserOnboardingNavigationInPagesRouter';
+import UserOnboardingSingleRoute from './wizard-v0/UserOnboardingSingleRoute';
+import locations from './locations';
 
 function App() {
   return (
@@ -16,11 +18,15 @@ function App() {
           <SelectFlowPage />
         </Route>
 
-        <Route path="/wizard-single-route" exact>
+        <Route path={locations.v0.base}>
           <UserOnboardingSingleRoute />
         </Route>
 
-        <Route path="/success" exact>
+        <Route path={locations.v1.base}>
+          <UserOnboardingV1Router />
+        </Route>
+
+        <Route path={locations.success} exact>
           <SuccessPage />
         </Route>
 
