@@ -1,8 +1,8 @@
 import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import NamePage from './pages/NamePage';
-import SexPage from './pages/SexPage';
-import MobileNumberPage from './pages/MobileNumberPage';
+import NamePage from '../steps/NamePage';
+import SexPage from '../steps/SexPage';
+import MobileNumberPage from '../steps/MobileNumberPage';
 import wizardLocations from './locations';
 import locations from '../locations';
 
@@ -36,7 +36,7 @@ const UserOnboardingV4Router = () => {
   const history = useHistory();
   const [user, setUser] = useState(getOnboardingState().user);
 
-  useEffect(() => () => clearOnboardingState());
+  useEffect(() => () => clearOnboardingState(), []);
 
   const onNext = nextUrl => updatedUser => {
     const newState = {

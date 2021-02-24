@@ -1,0 +1,58 @@
+@import '~carbon-components/scss/globals/scss/styles.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  margin-bottom: $layout-03;
+}
+
+.bx--text-input {
+  margin-bottom: $layout-03;
+}
+
+.bx--progress-step-button {
+  svg {
+    display: none;
+  }
+}
+
+.bx--progress {
+  margin: $spacing-05;
+}
+
+.bx--progress-line {
+  height: 3px;
+}
+
+.page-container {
+  margin: 0 auto;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bx--btn-set{
+  justify-content: flex-end;
+}
+
+.bx--form {
+  min-height: 240px;
+}

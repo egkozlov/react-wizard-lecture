@@ -1,16 +1,17 @@
+import { Tile } from 'carbon-components-react';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import PageContainer from './PageContainer';
 
 const SuccessPage = () => {
   const { state = {} } = useLocation<any>();
-  return (<div>
+  return (<PageContainer>
     <h1>Success page</h1>
-    <div>
+    <Tile>
       <pre>{JSON.stringify(state.user || {}, null, 2)}</pre>
-    </div>
-    <Link to="/">Back to start page</Link>
-
-  </div>);
+    </Tile>
+    <Link style={{ marginTop: '24px' }} to="/">Back to start page</Link>
+  </PageContainer>);
 };
 
 export default SuccessPage;

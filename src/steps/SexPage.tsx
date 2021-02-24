@@ -1,23 +1,16 @@
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { Button, ButtonSet, Form, RadioButtonGroup, RadioButton, FormGroup } from 'carbon-components-react';
-import locations from '../locations';
-import PageContainer from '../../PageContainer';
-import ProgressBar from '../../ProgressBar';
+import PageContainer from '../PageContainer';
+import ProgressBar from '../ProgressBar';
 
 const SexPage = ({
   onNext,
   user,
+  onBack,
 }) => {
-  const history = useHistory();
   const [sex, setSex] = useState(user.sex);
   const onSubmit = () => {
     onNext({ sex });
-    history.push(locations.mobileNumber);
-  };
-
-  const onBack = () => {
-    history.push(locations.name);
   };
 
   return <PageContainer>

@@ -1,7 +1,7 @@
 import { Redirect, Route, Switch, useHistory, useLocation } from 'react-router-dom';
-import NamePage from './pages/NamePage';
-import SexPage from './pages/SexPage';
-import MobileNumberPage from './pages/MobileNumberPage';
+import NamePage from '../steps/NamePage';
+import SexPage from '../steps/SexPage';
+import MobileNumberPage from '../steps/MobileNumberPage';
 import wizardLocations from './locations';
 import locations from '../locations';
 
