@@ -5,13 +5,13 @@ import SexPage from '../steps/SexPage';
 import MobileNumberPage from '../steps/MobileNumberPage';
 import wizardLocations from './locations';
 import locations from '../locations';
-import useOnboarindUserState from './useOnboardingUserState';
+import useOnboarindUserState from '../useOnboardingUserState';
 
 const UserOnboardingV4Router = () => {
   const history = useHistory();
   const [user, setUser, resetState] = useOnboarindUserState();  
 
-  useEffect(() => () => resetState(), []);
+  useEffect(() => () => resetState(), [resetState]);
 
   const onNext = nextUrl => updatedUser => {
     const newUser = {...user, ...updatedUser };

@@ -13,6 +13,7 @@ const SelectFlowPage = () => {
         <li><Link to={locations.v2.base}>Router navigation on router level</Link></li>
         <li><Link to={locations.v3.base}>Router navigation on router level - location state</Link></li>
         <li><Link to={locations.v4.base}>Router navigation on router level - sessionStorage state</Link></li>
+        <li><Link to={locations.v5.base}>Router navigation in location state - sessionStorage state</Link></li>
       </ul>
     </PageContainer>
   );
