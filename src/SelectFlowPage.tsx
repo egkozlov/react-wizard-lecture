@@ -7,13 +7,14 @@ const SelectFlowPage = () => {
   return (
     <PageContainer>
       <h1>Entrypoints</h1>
-      <ol>
-        <li><Link to={locations.v0.base}>Variant 0</Link></li>
-        <li><Link to={locations.v1.base}>Variant 1</Link></li>
-        <li><Link to={locations.v2.base}>Variant 2</Link></li>
-        <li><Link to={locations.v4.base}>Variant 3</Link></li>
-        <li><Link to={locations.v5.base}>Variant 4</Link></li>
-      </ol>
+      <ul>
+        <li><Link to={locations.v0.base}>Single route implementation</Link></li>
+        <li><Link to={locations.v1.base}>Router navigation inside pages</Link></li>
+        <li><Link to={locations.v2.base}>Router navigation on router level</Link></li>
+        <li><Link to={locations.v3.base}>Router navigation on router level - location state</Link></li>
+        <li><Link to={locations.v4.base}>Router navigation on router level - sessionStorage state</Link></li>
+        <li><Link to={locations.v5.base}>Router navigation in location state - sessionStorage state</Link></li>
+      </ul>
     </PageContainer>
   );
 };
