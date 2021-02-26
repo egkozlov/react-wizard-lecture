@@ -1,4 +1,4 @@
-const baseUrl = '/wizard-navigation-v3';
+const baseUrl = '/wizard-navigation-v2';
 
 const locations = {
   base: baseUrl,

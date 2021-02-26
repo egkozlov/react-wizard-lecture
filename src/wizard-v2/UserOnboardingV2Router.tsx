@@ -12,7 +12,7 @@ const defaultUser = {
   mobileNumber: ''
 };
 
-const UserOnboardingV3Router = () => {
+const UserOnboardingV2Router = () => {
   const history = useHistory();
   const { state } = useLocation<{ user: any }>();
   const location = useLocation();
@@ -63,4 +63,4 @@ const UserOnboardingV3Router = () => {
   );
 };
 
-export default UserOnboardingV3Router;
+export default UserOnboardingV2Router;
