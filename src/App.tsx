@@ -30,10 +30,6 @@ function App() {
           <UserOnboardingV1Router />
         </Route>
 
-        <Route path={locations.v2.base}>
-          <UserOnboardingV2Router />
-        </Route>
-
         <Route path={locations.v3.base}>
           <UserOnboardingV3Router />
         </Route>
