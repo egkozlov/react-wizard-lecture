@@ -12,7 +12,7 @@ enum PAGES {
   MOBILE_NUMBER = 'mobile-number',
 }
 
-const UserOnboardingV5Router = () => {
+const UserOnboardingV4Router = () => {
   const history = useHistory();
   const locationState = useLocation<{ currentPage: PAGES }>().state;
   const currentPage = locationState?.currentPage || PAGES.NAME;
@@ -23,7 +23,7 @@ const UserOnboardingV5Router = () => {
   const onNext = nextPage => updatedUser => {
     const newUser = { ...user, ...updatedUser };
     setUser(newUser);
-    history.push(locations.v5.base, { currentPage: nextPage });
+    history.push(locations.v4.base, { currentPage: nextPage });
   };
 
   const onBack = () => history.goBack();
@@ -52,4 +52,4 @@ const UserOnboardingV5Router = () => {
   }
 };
 
-export default UserOnboardingV5Router;
+export default UserOnboardingV4Router;
