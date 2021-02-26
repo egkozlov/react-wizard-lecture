@@ -10,7 +10,7 @@ import SuccessPage from './SuccessPage';
 import UserOnboardingV0Router from './wizard-v0/UserOnboardingV0Router';
 import UserOnboardingV1Router from './wizard-v1/UserOnboardingNavigationInPagesRouter';
 import UserOnboardingV2Router from './wizard-v2/UserOnboardingV2Router';
-import UserOnboardingV4Router from './wizard-v4/UserOnboaringV4Router';
+import UserOnboardingV3Router from './wizard-v3/UserOnboardingV3Router';
 import UserOnboardingV5Router from './wizard-v5/UserOnboardingV5Router';
 
 function App() {
@@ -33,8 +33,8 @@ function App() {
           <UserOnboardingV2Router />
         </Route>
 
-        <Route path={locations.v4.base}>
-          <UserOnboardingV4Router />
+        <Route path={locations.v3.base}>
+          <UserOnboardingV3Router />
         </Route>
 
         <Route path={locations.v5.base}>

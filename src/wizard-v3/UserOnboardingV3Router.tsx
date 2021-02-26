@@ -7,7 +7,7 @@ import wizardLocations from './locations';
 import locations from '../locations';
 import useOnboarindUserState from '../useOnboardingUserState';
 
-const UserOnboardingV4Router = () => {
+const UserOnboardingV3Router = () => {
   const history = useHistory();
   const [user, setUser, resetState] = useOnboarindUserState();  
 
@@ -51,4 +51,4 @@ const UserOnboardingV4Router = () => {
   );
 };
 
-export default UserOnboardingV4Router;
+export default UserOnboardingV3Router;
